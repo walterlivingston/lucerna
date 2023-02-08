@@ -1,5 +1,6 @@
 CMakeFiles/main.dir/src/main.cpp.o: \
   /Users/walterlivingston/Desktop/GraphicsEngine/src/main.cpp \
+  /Users/walterlivingston/Desktop/GraphicsEngine/include/window.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/iostream \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__config \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__config_site \
@@ -421,7 +422,6 @@ CMakeFiles/main.dir/src/main.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/inttypes.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/xlocale/_inttypes.h \
   /Users/walterlivingston/Desktop/GraphicsEngine/dependencies/glfw/include/GLFW/glfw3.h \
-  /Users/walterlivingston/Desktop/GraphicsEngine/include/window.h \
   /Users/walterlivingston/Desktop/GraphicsEngine/include/resource_manager.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/map \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/is_transparent.h \
