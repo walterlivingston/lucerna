@@ -8,3 +8,4 @@
 #include "window.h"
 #include "shader.h"
 #include "displaymanager.h"
+#include "shape.h"
