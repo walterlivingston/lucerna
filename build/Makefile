@@ -261,53 +261,29 @@ dependencies/stb/stb.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/dependencies/stb/stb.cpp.s
 .PHONY : dependencies/stb/stb.cpp.s
 
-src/camera.o: src/camera.cpp.o
-.PHONY : src/camera.o
+src/displaymanager.o: src/displaymanager.cpp.o
+.PHONY : src/displaymanager.o
 
 # target to build an object file
-src/camera.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/camera.cpp.o
-.PHONY : src/camera.cpp.o
+src/displaymanager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/displaymanager.cpp.o
+.PHONY : src/displaymanager.cpp.o
 
-src/camera.i: src/camera.cpp.i
-.PHONY : src/camera.i
-
-# target to preprocess a source file
-src/camera.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/camera.cpp.i
-.PHONY : src/camera.cpp.i
-
-src/camera.s: src/camera.cpp.s
-.PHONY : src/camera.s
-
-# target to generate assembly for a file
-src/camera.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/camera.cpp.s
-.PHONY : src/camera.cpp.s
-
-src/ebo.o: src/ebo.cpp.o
-.PHONY : src/ebo.o
-
-# target to build an object file
-src/ebo.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/ebo.cpp.o
-.PHONY : src/ebo.cpp.o
-
-src/ebo.i: src/ebo.cpp.i
-.PHONY : src/ebo.i
+src/displaymanager.i: src/displaymanager.cpp.i
+.PHONY : src/displaymanager.i
 
 # target to preprocess a source file
-src/ebo.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/ebo.cpp.i
-.PHONY : src/ebo.cpp.i
+src/displaymanager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/displaymanager.cpp.i
+.PHONY : src/displaymanager.cpp.i
 
-src/ebo.s: src/ebo.cpp.s
-.PHONY : src/ebo.s
+src/displaymanager.s: src/displaymanager.cpp.s
+.PHONY : src/displaymanager.s
 
 # target to generate assembly for a file
-src/ebo.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/ebo.cpp.s
-.PHONY : src/ebo.cpp.s
+src/displaymanager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/displaymanager.cpp.s
+.PHONY : src/displaymanager.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -333,54 +309,6 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
-src/mesh.o: src/mesh.cpp.o
-.PHONY : src/mesh.o
-
-# target to build an object file
-src/mesh.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/mesh.cpp.o
-.PHONY : src/mesh.cpp.o
-
-src/mesh.i: src/mesh.cpp.i
-.PHONY : src/mesh.i
-
-# target to preprocess a source file
-src/mesh.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/mesh.cpp.i
-.PHONY : src/mesh.cpp.i
-
-src/mesh.s: src/mesh.cpp.s
-.PHONY : src/mesh.s
-
-# target to generate assembly for a file
-src/mesh.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/mesh.cpp.s
-.PHONY : src/mesh.cpp.s
-
-src/resource_manager.o: src/resource_manager.cpp.o
-.PHONY : src/resource_manager.o
-
-# target to build an object file
-src/resource_manager.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/resource_manager.cpp.o
-.PHONY : src/resource_manager.cpp.o
-
-src/resource_manager.i: src/resource_manager.cpp.i
-.PHONY : src/resource_manager.i
-
-# target to preprocess a source file
-src/resource_manager.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/resource_manager.cpp.i
-.PHONY : src/resource_manager.cpp.i
-
-src/resource_manager.s: src/resource_manager.cpp.s
-.PHONY : src/resource_manager.s
-
-# target to generate assembly for a file
-src/resource_manager.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/resource_manager.cpp.s
-.PHONY : src/resource_manager.cpp.s
-
 src/shader.o: src/shader.cpp.o
 .PHONY : src/shader.o
 
@@ -404,102 +332,6 @@ src/shader.s: src/shader.cpp.s
 src/shader.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/shader.cpp.s
 .PHONY : src/shader.cpp.s
-
-src/shape.o: src/shape.cpp.o
-.PHONY : src/shape.o
-
-# target to build an object file
-src/shape.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/shape.cpp.o
-.PHONY : src/shape.cpp.o
-
-src/shape.i: src/shape.cpp.i
-.PHONY : src/shape.i
-
-# target to preprocess a source file
-src/shape.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/shape.cpp.i
-.PHONY : src/shape.cpp.i
-
-src/shape.s: src/shape.cpp.s
-.PHONY : src/shape.s
-
-# target to generate assembly for a file
-src/shape.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/shape.cpp.s
-.PHONY : src/shape.cpp.s
-
-src/texture2D.o: src/texture2D.cpp.o
-.PHONY : src/texture2D.o
-
-# target to build an object file
-src/texture2D.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/texture2D.cpp.o
-.PHONY : src/texture2D.cpp.o
-
-src/texture2D.i: src/texture2D.cpp.i
-.PHONY : src/texture2D.i
-
-# target to preprocess a source file
-src/texture2D.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/texture2D.cpp.i
-.PHONY : src/texture2D.cpp.i
-
-src/texture2D.s: src/texture2D.cpp.s
-.PHONY : src/texture2D.s
-
-# target to generate assembly for a file
-src/texture2D.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/texture2D.cpp.s
-.PHONY : src/texture2D.cpp.s
-
-src/vao.o: src/vao.cpp.o
-.PHONY : src/vao.o
-
-# target to build an object file
-src/vao.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/vao.cpp.o
-.PHONY : src/vao.cpp.o
-
-src/vao.i: src/vao.cpp.i
-.PHONY : src/vao.i
-
-# target to preprocess a source file
-src/vao.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/vao.cpp.i
-.PHONY : src/vao.cpp.i
-
-src/vao.s: src/vao.cpp.s
-.PHONY : src/vao.s
-
-# target to generate assembly for a file
-src/vao.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/vao.cpp.s
-.PHONY : src/vao.cpp.s
-
-src/vbo.o: src/vbo.cpp.o
-.PHONY : src/vbo.o
-
-# target to build an object file
-src/vbo.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/vbo.cpp.o
-.PHONY : src/vbo.cpp.o
-
-src/vbo.i: src/vbo.cpp.i
-.PHONY : src/vbo.i
-
-# target to preprocess a source file
-src/vbo.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/vbo.cpp.i
-.PHONY : src/vbo.cpp.i
-
-src/vbo.s: src/vbo.cpp.s
-.PHONY : src/vbo.s
-
-# target to generate assembly for a file
-src/vbo.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/vbo.cpp.s
-.PHONY : src/vbo.cpp.s
 
 src/window.o: src/window.cpp.o
 .PHONY : src/window.o
@@ -547,36 +379,15 @@ help:
 	@echo "... dependencies/stb/stb.o"
 	@echo "... dependencies/stb/stb.i"
 	@echo "... dependencies/stb/stb.s"
-	@echo "... src/camera.o"
-	@echo "... src/camera.i"
-	@echo "... src/camera.s"
-	@echo "... src/ebo.o"
-	@echo "... src/ebo.i"
-	@echo "... src/ebo.s"
+	@echo "... src/displaymanager.o"
+	@echo "... src/displaymanager.i"
+	@echo "... src/displaymanager.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/mesh.o"
-	@echo "... src/mesh.i"
-	@echo "... src/mesh.s"
-	@echo "... src/resource_manager.o"
-	@echo "... src/resource_manager.i"
-	@echo "... src/resource_manager.s"
 	@echo "... src/shader.o"
 	@echo "... src/shader.i"
 	@echo "... src/shader.s"
-	@echo "... src/shape.o"
-	@echo "... src/shape.i"
-	@echo "... src/shape.s"
-	@echo "... src/texture2D.o"
-	@echo "... src/texture2D.i"
-	@echo "... src/texture2D.s"
-	@echo "... src/vao.o"
-	@echo "... src/vao.i"
-	@echo "... src/vao.s"
-	@echo "... src/vbo.o"
-	@echo "... src/vbo.i"
-	@echo "... src/vbo.s"
 	@echo "... src/window.o"
 	@echo "... src/window.i"
 	@echo "... src/window.s"

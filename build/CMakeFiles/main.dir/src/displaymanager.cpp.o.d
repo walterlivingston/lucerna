@@ -1,5 +1,5 @@
-CMakeFiles/main.dir/src/window.cpp.o: \
-  /Users/walterlivingston/Desktop/GraphicsEngine/src/window.cpp \
+CMakeFiles/main.dir/src/displaymanager.cpp.o: \
+  /Users/walterlivingston/Desktop/GraphicsEngine/src/displaymanager.cpp \
   /Users/walterlivingston/Desktop/GraphicsEngine/include/lucerna/lucerna.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/iostream \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__config \

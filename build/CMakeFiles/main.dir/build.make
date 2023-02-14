@@ -69,38 +69,24 @@ include CMakeFiles/main.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/main.dir/flags.make
 
-CMakeFiles/main.dir/src/camera.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/src/camera.cpp.o: /Users/walterlivingston/Desktop/GraphicsEngine/src/camera.cpp
-CMakeFiles/main.dir/src/camera.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/walterlivingston/Desktop/GraphicsEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/main.dir/src/camera.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/camera.cpp.o -MF CMakeFiles/main.dir/src/camera.cpp.o.d -o CMakeFiles/main.dir/src/camera.cpp.o -c /Users/walterlivingston/Desktop/GraphicsEngine/src/camera.cpp
+CMakeFiles/main.dir/src/displaymanager.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/displaymanager.cpp.o: /Users/walterlivingston/Desktop/GraphicsEngine/src/displaymanager.cpp
+CMakeFiles/main.dir/src/displaymanager.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/walterlivingston/Desktop/GraphicsEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/main.dir/src/displaymanager.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/displaymanager.cpp.o -MF CMakeFiles/main.dir/src/displaymanager.cpp.o.d -o CMakeFiles/main.dir/src/displaymanager.cpp.o -c /Users/walterlivingston/Desktop/GraphicsEngine/src/displaymanager.cpp
 
-CMakeFiles/main.dir/src/camera.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/camera.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/walterlivingston/Desktop/GraphicsEngine/src/camera.cpp > CMakeFiles/main.dir/src/camera.cpp.i
+CMakeFiles/main.dir/src/displaymanager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/displaymanager.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/walterlivingston/Desktop/GraphicsEngine/src/displaymanager.cpp > CMakeFiles/main.dir/src/displaymanager.cpp.i
 
-CMakeFiles/main.dir/src/camera.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/camera.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/walterlivingston/Desktop/GraphicsEngine/src/camera.cpp -o CMakeFiles/main.dir/src/camera.cpp.s
-
-CMakeFiles/main.dir/src/ebo.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/src/ebo.cpp.o: /Users/walterlivingston/Desktop/GraphicsEngine/src/ebo.cpp
-CMakeFiles/main.dir/src/ebo.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/walterlivingston/Desktop/GraphicsEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/main.dir/src/ebo.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/ebo.cpp.o -MF CMakeFiles/main.dir/src/ebo.cpp.o.d -o CMakeFiles/main.dir/src/ebo.cpp.o -c /Users/walterlivingston/Desktop/GraphicsEngine/src/ebo.cpp
-
-CMakeFiles/main.dir/src/ebo.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/ebo.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/walterlivingston/Desktop/GraphicsEngine/src/ebo.cpp > CMakeFiles/main.dir/src/ebo.cpp.i
-
-CMakeFiles/main.dir/src/ebo.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/ebo.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/walterlivingston/Desktop/GraphicsEngine/src/ebo.cpp -o CMakeFiles/main.dir/src/ebo.cpp.s
+CMakeFiles/main.dir/src/displaymanager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/displaymanager.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/walterlivingston/Desktop/GraphicsEngine/src/displaymanager.cpp -o CMakeFiles/main.dir/src/displaymanager.cpp.s
 
 CMakeFiles/main.dir/src/main.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/main.cpp.o: /Users/walterlivingston/Desktop/GraphicsEngine/src/main.cpp
 CMakeFiles/main.dir/src/main.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/walterlivingston/Desktop/GraphicsEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/walterlivingston/Desktop/GraphicsEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/main.dir/src/main.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/main.cpp.o -MF CMakeFiles/main.dir/src/main.cpp.o.d -o CMakeFiles/main.dir/src/main.cpp.o -c /Users/walterlivingston/Desktop/GraphicsEngine/src/main.cpp
 
 CMakeFiles/main.dir/src/main.cpp.i: cmake_force
@@ -111,38 +97,10 @@ CMakeFiles/main.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/main.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/walterlivingston/Desktop/GraphicsEngine/src/main.cpp -o CMakeFiles/main.dir/src/main.cpp.s
 
-CMakeFiles/main.dir/src/mesh.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/src/mesh.cpp.o: /Users/walterlivingston/Desktop/GraphicsEngine/src/mesh.cpp
-CMakeFiles/main.dir/src/mesh.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/walterlivingston/Desktop/GraphicsEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/main.dir/src/mesh.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/mesh.cpp.o -MF CMakeFiles/main.dir/src/mesh.cpp.o.d -o CMakeFiles/main.dir/src/mesh.cpp.o -c /Users/walterlivingston/Desktop/GraphicsEngine/src/mesh.cpp
-
-CMakeFiles/main.dir/src/mesh.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/mesh.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/walterlivingston/Desktop/GraphicsEngine/src/mesh.cpp > CMakeFiles/main.dir/src/mesh.cpp.i
-
-CMakeFiles/main.dir/src/mesh.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/mesh.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/walterlivingston/Desktop/GraphicsEngine/src/mesh.cpp -o CMakeFiles/main.dir/src/mesh.cpp.s
-
-CMakeFiles/main.dir/src/resource_manager.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/src/resource_manager.cpp.o: /Users/walterlivingston/Desktop/GraphicsEngine/src/resource_manager.cpp
-CMakeFiles/main.dir/src/resource_manager.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/walterlivingston/Desktop/GraphicsEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/main.dir/src/resource_manager.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/resource_manager.cpp.o -MF CMakeFiles/main.dir/src/resource_manager.cpp.o.d -o CMakeFiles/main.dir/src/resource_manager.cpp.o -c /Users/walterlivingston/Desktop/GraphicsEngine/src/resource_manager.cpp
-
-CMakeFiles/main.dir/src/resource_manager.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/resource_manager.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/walterlivingston/Desktop/GraphicsEngine/src/resource_manager.cpp > CMakeFiles/main.dir/src/resource_manager.cpp.i
-
-CMakeFiles/main.dir/src/resource_manager.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/resource_manager.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/walterlivingston/Desktop/GraphicsEngine/src/resource_manager.cpp -o CMakeFiles/main.dir/src/resource_manager.cpp.s
-
 CMakeFiles/main.dir/src/shader.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/shader.cpp.o: /Users/walterlivingston/Desktop/GraphicsEngine/src/shader.cpp
 CMakeFiles/main.dir/src/shader.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/walterlivingston/Desktop/GraphicsEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/main.dir/src/shader.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/walterlivingston/Desktop/GraphicsEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/src/shader.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/shader.cpp.o -MF CMakeFiles/main.dir/src/shader.cpp.o.d -o CMakeFiles/main.dir/src/shader.cpp.o -c /Users/walterlivingston/Desktop/GraphicsEngine/src/shader.cpp
 
 CMakeFiles/main.dir/src/shader.cpp.i: cmake_force
@@ -153,66 +111,10 @@ CMakeFiles/main.dir/src/shader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/shader.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/walterlivingston/Desktop/GraphicsEngine/src/shader.cpp -o CMakeFiles/main.dir/src/shader.cpp.s
 
-CMakeFiles/main.dir/src/shape.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/src/shape.cpp.o: /Users/walterlivingston/Desktop/GraphicsEngine/src/shape.cpp
-CMakeFiles/main.dir/src/shape.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/walterlivingston/Desktop/GraphicsEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/main.dir/src/shape.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/shape.cpp.o -MF CMakeFiles/main.dir/src/shape.cpp.o.d -o CMakeFiles/main.dir/src/shape.cpp.o -c /Users/walterlivingston/Desktop/GraphicsEngine/src/shape.cpp
-
-CMakeFiles/main.dir/src/shape.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/shape.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/walterlivingston/Desktop/GraphicsEngine/src/shape.cpp > CMakeFiles/main.dir/src/shape.cpp.i
-
-CMakeFiles/main.dir/src/shape.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/shape.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/walterlivingston/Desktop/GraphicsEngine/src/shape.cpp -o CMakeFiles/main.dir/src/shape.cpp.s
-
-CMakeFiles/main.dir/src/texture2D.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/src/texture2D.cpp.o: /Users/walterlivingston/Desktop/GraphicsEngine/src/texture2D.cpp
-CMakeFiles/main.dir/src/texture2D.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/walterlivingston/Desktop/GraphicsEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/main.dir/src/texture2D.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/texture2D.cpp.o -MF CMakeFiles/main.dir/src/texture2D.cpp.o.d -o CMakeFiles/main.dir/src/texture2D.cpp.o -c /Users/walterlivingston/Desktop/GraphicsEngine/src/texture2D.cpp
-
-CMakeFiles/main.dir/src/texture2D.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/texture2D.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/walterlivingston/Desktop/GraphicsEngine/src/texture2D.cpp > CMakeFiles/main.dir/src/texture2D.cpp.i
-
-CMakeFiles/main.dir/src/texture2D.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/texture2D.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/walterlivingston/Desktop/GraphicsEngine/src/texture2D.cpp -o CMakeFiles/main.dir/src/texture2D.cpp.s
-
-CMakeFiles/main.dir/src/vao.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/src/vao.cpp.o: /Users/walterlivingston/Desktop/GraphicsEngine/src/vao.cpp
-CMakeFiles/main.dir/src/vao.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/walterlivingston/Desktop/GraphicsEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/main.dir/src/vao.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/vao.cpp.o -MF CMakeFiles/main.dir/src/vao.cpp.o.d -o CMakeFiles/main.dir/src/vao.cpp.o -c /Users/walterlivingston/Desktop/GraphicsEngine/src/vao.cpp
-
-CMakeFiles/main.dir/src/vao.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/vao.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/walterlivingston/Desktop/GraphicsEngine/src/vao.cpp > CMakeFiles/main.dir/src/vao.cpp.i
-
-CMakeFiles/main.dir/src/vao.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/vao.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/walterlivingston/Desktop/GraphicsEngine/src/vao.cpp -o CMakeFiles/main.dir/src/vao.cpp.s
-
-CMakeFiles/main.dir/src/vbo.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/src/vbo.cpp.o: /Users/walterlivingston/Desktop/GraphicsEngine/src/vbo.cpp
-CMakeFiles/main.dir/src/vbo.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/walterlivingston/Desktop/GraphicsEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/main.dir/src/vbo.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/vbo.cpp.o -MF CMakeFiles/main.dir/src/vbo.cpp.o.d -o CMakeFiles/main.dir/src/vbo.cpp.o -c /Users/walterlivingston/Desktop/GraphicsEngine/src/vbo.cpp
-
-CMakeFiles/main.dir/src/vbo.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/vbo.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/walterlivingston/Desktop/GraphicsEngine/src/vbo.cpp > CMakeFiles/main.dir/src/vbo.cpp.i
-
-CMakeFiles/main.dir/src/vbo.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/vbo.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/walterlivingston/Desktop/GraphicsEngine/src/vbo.cpp -o CMakeFiles/main.dir/src/vbo.cpp.s
-
 CMakeFiles/main.dir/src/window.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/window.cpp.o: /Users/walterlivingston/Desktop/GraphicsEngine/src/window.cpp
 CMakeFiles/main.dir/src/window.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/walterlivingston/Desktop/GraphicsEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/main.dir/src/window.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/walterlivingston/Desktop/GraphicsEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/main.dir/src/window.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/window.cpp.o -MF CMakeFiles/main.dir/src/window.cpp.o.d -o CMakeFiles/main.dir/src/window.cpp.o -c /Users/walterlivingston/Desktop/GraphicsEngine/src/window.cpp
 
 CMakeFiles/main.dir/src/window.cpp.i: cmake_force
@@ -226,7 +128,7 @@ CMakeFiles/main.dir/src/window.cpp.s: cmake_force
 CMakeFiles/main.dir/dependencies/glad/src/glad.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/dependencies/glad/src/glad.c.o: /Users/walterlivingston/Desktop/GraphicsEngine/dependencies/glad/src/glad.c
 CMakeFiles/main.dir/dependencies/glad/src/glad.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/walterlivingston/Desktop/GraphicsEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/main.dir/dependencies/glad/src/glad.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/walterlivingston/Desktop/GraphicsEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/main.dir/dependencies/glad/src/glad.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/dependencies/glad/src/glad.c.o -MF CMakeFiles/main.dir/dependencies/glad/src/glad.c.o.d -o CMakeFiles/main.dir/dependencies/glad/src/glad.c.o -c /Users/walterlivingston/Desktop/GraphicsEngine/dependencies/glad/src/glad.c
 
 CMakeFiles/main.dir/dependencies/glad/src/glad.c.i: cmake_force
@@ -240,7 +142,7 @@ CMakeFiles/main.dir/dependencies/glad/src/glad.c.s: cmake_force
 CMakeFiles/main.dir/dependencies/stb/stb.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/dependencies/stb/stb.cpp.o: /Users/walterlivingston/Desktop/GraphicsEngine/dependencies/stb/stb.cpp
 CMakeFiles/main.dir/dependencies/stb/stb.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/walterlivingston/Desktop/GraphicsEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/main.dir/dependencies/stb/stb.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/walterlivingston/Desktop/GraphicsEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/main.dir/dependencies/stb/stb.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/dependencies/stb/stb.cpp.o -MF CMakeFiles/main.dir/dependencies/stb/stb.cpp.o.d -o CMakeFiles/main.dir/dependencies/stb/stb.cpp.o -c /Users/walterlivingston/Desktop/GraphicsEngine/dependencies/stb/stb.cpp
 
 CMakeFiles/main.dir/dependencies/stb/stb.cpp.i: cmake_force
@@ -253,16 +155,9 @@ CMakeFiles/main.dir/dependencies/stb/stb.cpp.s: cmake_force
 
 # Object files for target main
 main_OBJECTS = \
-"CMakeFiles/main.dir/src/camera.cpp.o" \
-"CMakeFiles/main.dir/src/ebo.cpp.o" \
+"CMakeFiles/main.dir/src/displaymanager.cpp.o" \
 "CMakeFiles/main.dir/src/main.cpp.o" \
-"CMakeFiles/main.dir/src/mesh.cpp.o" \
-"CMakeFiles/main.dir/src/resource_manager.cpp.o" \
 "CMakeFiles/main.dir/src/shader.cpp.o" \
-"CMakeFiles/main.dir/src/shape.cpp.o" \
-"CMakeFiles/main.dir/src/texture2D.cpp.o" \
-"CMakeFiles/main.dir/src/vao.cpp.o" \
-"CMakeFiles/main.dir/src/vbo.cpp.o" \
 "CMakeFiles/main.dir/src/window.cpp.o" \
 "CMakeFiles/main.dir/dependencies/glad/src/glad.c.o" \
 "CMakeFiles/main.dir/dependencies/stb/stb.cpp.o"
@@ -270,23 +165,16 @@ main_OBJECTS = \
 # External object files for target main
 main_EXTERNAL_OBJECTS =
 
-main: CMakeFiles/main.dir/src/camera.cpp.o
-main: CMakeFiles/main.dir/src/ebo.cpp.o
+main: CMakeFiles/main.dir/src/displaymanager.cpp.o
 main: CMakeFiles/main.dir/src/main.cpp.o
-main: CMakeFiles/main.dir/src/mesh.cpp.o
-main: CMakeFiles/main.dir/src/resource_manager.cpp.o
 main: CMakeFiles/main.dir/src/shader.cpp.o
-main: CMakeFiles/main.dir/src/shape.cpp.o
-main: CMakeFiles/main.dir/src/texture2D.cpp.o
-main: CMakeFiles/main.dir/src/vao.cpp.o
-main: CMakeFiles/main.dir/src/vbo.cpp.o
 main: CMakeFiles/main.dir/src/window.cpp.o
 main: CMakeFiles/main.dir/dependencies/glad/src/glad.c.o
 main: CMakeFiles/main.dir/dependencies/stb/stb.cpp.o
 main: CMakeFiles/main.dir/build.make
 main: dependencies/glfw/src/libglfw3.a
 main: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/walterlivingston/Desktop/GraphicsEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/walterlivingston/Desktop/GraphicsEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 	/usr/local/Cellar/cmake/3.25.2/bin/cmake -E copy_directory /Users/walterlivingston/Desktop/GraphicsEngine/shaders /Users/walterlivingston/Desktop/GraphicsEngine/build
 
