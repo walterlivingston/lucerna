@@ -5,6 +5,7 @@
 
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
+#include <stb_image.h>
 
 #include "window.h"
 #include "renderer.h"
@@ -13,3 +14,4 @@
 #include "buffer_layout.h"
 #include "vertex_array.h"
 #include "shader.h"
+#include "texture.h"
