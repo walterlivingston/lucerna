@@ -32,7 +32,6 @@ bool Window::init(){
     glfwMakeContextCurrent(m_window);
     gladLoadGL();
 
-    Shader s = DisplayManager::LoadShader("default.vert", "default.frag", nullptr, "default");
     return true;
 }
 

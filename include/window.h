@@ -1,13 +1,11 @@
-#ifndef WINDOW_H
-#define WINDOW_H
+#pragma once
 
 #include <string>
-#include "shader.h"
 
 class Window{
     private:
-        int m_width, m_height;
         const char* m_name;
+        int m_width, m_height;
         GLFWwindow* m_window;
 
         static void framebuffer_size_callback(GLFWwindow* window, int width, int height);
@@ -21,5 +19,3 @@ class Window{
 
         bool closed();
 };
-
-#endif
