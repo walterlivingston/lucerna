@@ -29,8 +29,11 @@ int main(){
 
         IndexBuffer ib(indices, 6);
 
+        glm::mat4 proj = glm::ortho(-2.0f, 2.0f, -1.5f, 1.5f, -1.0f, 1.0f);
+
         Shader shader("shaders/default.glsl");
         shader.Bind();
+        shader.SetUniformMat4f("u_MVP", proj);
 
         Texture tex("assets/textures/lamp.jpg");
         tex.Bind();
