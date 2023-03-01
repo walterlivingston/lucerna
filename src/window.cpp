@@ -1,6 +1,6 @@
 #include "lucerna/lucerna.h"
 
-Window::Window(const char* name, int width, int height):m_name(name), m_width(width), m_height(height){}
+Window::Window(const char* name, unsigned int width, unsigned int height):m_name(name), m_width(width), m_height(height){}
 Window::~Window(){
     glfwTerminate();
 }
