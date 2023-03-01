@@ -30,6 +30,7 @@ class BufferLayout{
 
         template<typename T>
         void Push(unsigned int count){
+            count;
             assert(false);
         }
 

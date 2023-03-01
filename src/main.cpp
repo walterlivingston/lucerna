@@ -5,11 +5,12 @@ int main(){
 
     if(win.init()){
         // Any OpenGL code must go in this if statement
+
         float positions[16] = {
-            -0.5f, -0.5f, 0.0f, 0.0f,
-             0.5f, -0.5f, 1.0f, 0.0f,
-             0.5f,  0.5f, 1.0f, 1.0f,
-            -0.5f,  0.5f, 0.0f, 1.0f
+            -50.0f, -50.0f, 0.0f, 0.0f,
+             50.0f, -50.0f, 1.0f, 0.0f,
+             50.0f,  50.0f, 1.0f, 1.0f,
+            -50.0f,  50.0f, 0.0f, 1.0f
         };
 
         unsigned int indices[6] = {
@@ -29,7 +30,8 @@ int main(){
 
         IndexBuffer ib(indices, 6);
 
-        glm::mat4 proj = glm::ortho(-2.0f, 2.0f, -1.5f, 1.5f, -1.0f, 1.0f);
+        glm::mat4 proj = glm::ortho(0.0f, (float)(win.getWidth()), 0.0f, (float)(win.getHeight()), -1.0f, 1.0f);
+        glm::mat4 view = glm::translate(glm::mat4(1.0f), glm::vec3(0, 0, 0));
 
         Shader shader("shaders/default.glsl");
         shader.Bind();
@@ -45,14 +47,53 @@ int main(){
         shader.Unbind();
 
         Renderer renderer;
-        
+
+        ImGui::CreateContext();
+        ImGui_ImplGlfw_InitForOpenGL(win.getWindow(), true);
+        ImGui_ImplOpenGL3_Init("#version 150");
+        ImGui::StyleColorsDark();
+
+        glm::vec3 translationA(200,200,0);
+        glm::vec3 translationB(400,200,0);
+
         while(win.closed()){
             renderer.Clear();
             // Draw everything here
+            ImGui_ImplOpenGL3_NewFrame();
+            ImGui_ImplGlfw_NewFrame();
+            ImGui::NewFrame();
 
-            renderer.Draw(va, ib, shader);
+            {
+                glm::mat4 model = glm::translate(glm::mat4(1.0f), translationA);
+                glm::mat4 mvp = proj * view * model;
+                shader.Bind();
+                shader.SetUniformMat4f("u_MVP", mvp);
+
+                renderer.Draw(va, ib, shader);
+            }
+
+            {
+                glm::mat4 model = glm::translate(glm::mat4(1.0f), translationB);
+                glm::mat4 mvp = proj * view * model;
+                shader.Bind();
+                shader.SetUniformMat4f("u_MVP", mvp);
+
+                renderer.Draw(va, ib, shader);
+            }
+
+            {
+                ImGui::SliderFloat3("Translation A", &translationA.x, 0.0f, win.getWidth());
+                ImGui::SliderFloat3("Translation B", &translationB.x, 0.0f, win.getWidth());
+                ImGui::Text("Application average %.3f ms/frame (%.1f FPS)", 1000.0f / ImGui::GetIO().Framerate, ImGui::GetIO().Framerate);
+            }
+
+            ImGui::Render();
+            ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
             
             win.update();
         }
+        ImGui_ImplOpenGL3_Shutdown();
+        ImGui_ImplGlfw_Shutdown();
+        ImGui::DestroyContext();
     }
 }

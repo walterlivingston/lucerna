@@ -6,6 +6,22 @@ option(GLFW_BUILD_EXAMPLES OFF)
 option(GLFW_BUILD_TESTS OFF)
 add_subdirectory(dependencies/glfw)
 
+set(IMGUI_PATH dependencies/imgui)
+file(GLOB IMGUI_GLOB
+    ${IMGUI_PATH}/*.h
+    ${IMGUI_PATH}/*.cpp
+
+    # specific bindings...
+    ${IMGUI_PATH}/backends/imgui_impl_glfw.h
+    ${IMGUI_PATH}/backends/imgui_impl_glfw.cpp
+    ${IMGUI_PATH}/backends/imgui_impl_opengl3.h
+    ${IMGUI_PATH}/backends/imgui_impl_opengl3.cpp
+    ${IMGUI_PATH}/backends/imgui_impl_opengl3_loader.cpp)
+
+add_library("imgui" STATIC ${IMGUI_GLOB})
+target_include_directories("imgui" PUBLIC ${IMGUI_PATH})
+target_link_libraries("imgui" PRIVATE glfw)
+
 if(MSVC)
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /W4")
 else()
@@ -19,7 +35,8 @@ include_directories(include
                     dependencies/glad/include/
                     dependencies/glfw/include/
                     dependencies/glm/
-                    dependencies/stb/)
+                    dependencies/stb/
+                    imgui)
 
 file(GLOB VENDORS_SOURCES dependencies/glad/src/glad.c
                           dependencies/stb/stb.cpp)
@@ -42,7 +59,7 @@ add_executable(${PROJECT_NAME} ${PROJECT_SOURCES} ${PROJECT_HEADERS}
                                ${PROJECT_CONFIGS} ${PROJECT_SHADERS}
                                ${VENDORS_SOURCES})
 target_link_libraries(${PROJECT_NAME} glfw
-                      ${GLFW_LIBRARIES} ${GLAD_LIBRARIES})
+                      ${GLFW_LIBRARIES} ${GLAD_LIBRARIES} imgui)
 # add_custom_command(
 #     TARGET ${PROJECT_NAME} POST_BUILD
 #     COMMAND ${CMAKE_COMMAND} -E copy_directory ${CMAKE_SOURCE_DIR}/shaders $<TARGET_FILE_DIR:${PROJECT_NAME}>

@@ -18,4 +18,9 @@ class Window{
         void update();
 
         bool closed();
+
+        inline const char* getName() { return m_name; };
+        inline int getWidth() { return m_width; };
+        inline int getHeight() { return m_height; };
+        inline GLFWwindow* getWindow() { return m_window; };
 };
