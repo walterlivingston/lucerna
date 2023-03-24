@@ -1,30 +1,71 @@
-#include "SDL3/SDL.h"
 #include <iostream>
+#include <SDL.h>
 
-int main(){
-    if(SDL_Init(SDL_INIT_VIDEO) < 0)
-    {
-        std::cout << "Failed to initialize the SDL2 library\n";
-        return -1;
+// You shouldn't really use this statement, but it's fine for small programs
+using namespace std;
+
+// You must include the command line parameters for your main function to be recognized by SDL
+int main(int argc, char** args) {
+
+	// Pointers to our window and surface
+	SDL_Surface* winSurface = NULL;
+	SDL_Window* window = NULL;
+
+	// Initialize SDL. SDL_Init will return -1 if it fails.
+	if ( SDL_Init( SDL_INIT_EVERYTHING ) < 0 ) {
+		cout << "Error initializing SDL: " << SDL_GetError() << endl;
+		
+		// End the program
+		return 1;
+	} 
+
+	// Create our window
+	window = SDL_CreateWindow( "Example", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, 1280, 720, SDL_WINDOW_SHOWN );
+
+	// Make sure creating the window succeeded
+	if ( !window ) {
+		cout << "Error creating window: " << SDL_GetError()  << endl;
+		
+		// End the program
+		return 1;
+	}
+
+	// Get the surface from the window
+	winSurface = SDL_GetWindowSurface( window );
+
+	// Make sure getting the surface succeeded
+	if ( !winSurface ) {
+		cout << "Error getting surface: " << SDL_GetError() << endl;
+		
+		// End the program
+		return 1;
+	}
+
+	// Fill the window with a white rectangle
+	SDL_FillRect( winSurface, NULL, SDL_MapRGB( winSurface->format, 255, 255, 255 ) );
+
+	// Update the window display
+	SDL_UpdateWindowSurface( window );
+
+	// Wait
+	// A basic main loop to prevent blocking
+    bool is_running = true;
+    SDL_Event event;
+    while (is_running) {
+        while (SDL_PollEvent(&event)) {
+            if (event.type == SDL_QUIT) {
+                is_running = false;
+            }
+        }
+        SDL_Delay(16);
     }
 
-    // SDL_Window *window = SDL_CreateWindow("SDL2 Window", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 680, 480, 0);
+	// Destroy the window. This will also destroy the surface
+	SDL_DestroyWindow( window );
 
-    // if(!window)
-    // {
-    //     std::cout << "Failed to create window\n";
-    //     return -1;
-    // }
-
-    // SDL_Surface *window_surface = SDL_GetWindowSurface(window);
-
-    // if(!window_surface)
-    // {
-    //     std::cout << "Failed to get the surface from the window\n";
-    //     return -1;
-    // }
-
-    // SDL_UpdateWindowSurface(window);
-
-    // SDL_Delay(5000);
+	// Quit SDL
+	SDL_Quit();
+	
+	// End the program
+	return 0;
 }
