@@ -22,24 +22,21 @@ Application::Application(const char* title, int width, int height){
 Application::~Application(){
 	// Destroy the window. This will also destroy the surface
 	SDL_DestroyWindow(m_window);
+    SDL_Quit();
 }
 
-void Application::handleEvents(){
-    SDL_Event event;
-    while (SDL_PollEvent(&event)) {
-        if (event.type == SDL_QUIT) {
-            m_isRunning = false;
-        }
-    }
-}
-
-void Application::render(){
-
-}
-
-void Application::loop(){
+void Application::run(){
     while(m_isRunning){
-        handleEvents();
-        render();
+        SDL_GetMouseState(&m_mouseX, &m_mouseY);
+        m_eventCallback();
+
+        // (TODO) Allow user to pick background color
+        SDL_SetRenderDrawColor(m_renderer,0,0,0,SDL_ALPHA_OPAQUE);
+        SDL_RenderClear(m_renderer);
+        SDL_SetRenderDrawColor(m_renderer,255,255,255,SDL_ALPHA_OPAQUE);
+        
+        m_renderCallback();
+        SDL_RenderPresent(m_renderer);
+        SDL_Delay(100);
     }
 }

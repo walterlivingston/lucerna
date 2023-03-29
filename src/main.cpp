@@ -2,18 +2,37 @@
 #include <SDL.h>
 
 #include "Application.h"
+#include "Entity.h"
 
-// You shouldn't really use this statement, but it's fine for small programs
-using namespace std;
+Application* app;
+Entity* obj1;
+
+void handleEvents(){
+	SDL_Event event;
+    while (SDL_PollEvent(&event)) {
+        if (event.type == SDL_QUIT) {
+            app->stop();
+        }
+    }
+}
+
+void render(){
+	obj1->render();
+}
 
 // You must include the command line parameters for your main function to be recognized by SDL
-int main(int argc, char** args) {
-    Application app("Test", 1280, 720);
+int main() {
+    app = new Application("Test", 1280, 720);
+	obj1 = new Entity("assets/textures/Mario.bmp", app->getRenderer());
+	obj1->getRect()->setProperties(20,30,200,200);
 
-	app.loop();
+	app->setEventCallback(handleEvents);
+	app->setRenderCallback(render);
 
-	// Quit SDL
-	SDL_Quit();
+	app->run();
+
+	delete app;
+	delete obj1;
 	
 	// End the program
 	return 0;
