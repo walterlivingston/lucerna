@@ -18,8 +18,9 @@
 // #include "index_buffer.h"
 // #include "buffer_layout.h"
 // #include "vertex_array.h"
-// #include "shader.h"
 #include "application.h"
 #include "texture.h"
 #include "shader.h"
 #include "resource_manager.h"
+#include "sprite_renderer.h"
+

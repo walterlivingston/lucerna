@@ -16,7 +16,11 @@ Application::~Application(){
 
 void Application::run(){
     while(!m_window->closed()){
+        // m_eventCallback();
+
         m_window->clear();
+        m_renderCallback();
+
         m_window->update();
     }
 }
