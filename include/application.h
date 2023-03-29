@@ -1,11 +1,14 @@
 #pragma once
 
-namespace lucerna{
-    class Application{
-        public:
-            Application();
-            virtual ~Application();
+#include "window.h"
 
-            void Run();
-    }
-}
+class Application{
+    private:
+        Window* m_window;
+    public:
+        Application();
+        Application(const char* name, unsigned int width, unsigned int height);
+        virtual ~Application();
+
+        void run();
+};
