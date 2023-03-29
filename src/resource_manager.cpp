@@ -31,9 +31,11 @@ void ResourceManager::clear(){
 
 Tex2D ResourceManager::loadTextureFromFile(const char *file, bool alpha){
     Tex2D texture;
-    if (alpha)
+    if (alpha){
         texture.setFormat(GL_RGBA);
-
+        glEnable(GL_BLEND);
+        glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+    }
     int width, height, nrChannels;
     unsigned char* data = stbi_load(file, &width, &height, &nrChannels, 0);
 
