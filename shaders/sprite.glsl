@@ -7,8 +7,7 @@ out vec2 TexCoords;
 uniform mat4 model;
 uniform mat4 projection;
 
-void main()
-{
+void main(){
     TexCoords = vertex.zw;
     gl_Position = projection * model * vec4(vertex.xy, 0.0, 1.0);
 }
@@ -23,7 +22,6 @@ out vec4 color;
 uniform sampler2D image;
 uniform vec3 spriteColor;
 
-void main()
-{    
+void main(){    
     color = vec4(spriteColor, 1.0) * texture(image, TexCoords);
 } 

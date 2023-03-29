@@ -1,32 +1,25 @@
 #include "lucerna/lucerna.h"
 
-SpriteRenderer::SpriteRenderer(Shader shader)
-{
+SpriteRenderer::SpriteRenderer(Shader shader){
     this->shader = shader;
     this->initRenderData();
 }
 
-SpriteRenderer::~SpriteRenderer()
-{
+SpriteRenderer::~SpriteRenderer(){
     glDeleteVertexArrays(1, &this->quadVAO);
 }
 
-void SpriteRenderer::draw(Tex2D texture, glm::vec2 position, glm::vec2 size, float rotate, glm::vec3 color)
-{
-    // prepare transformations
+void SpriteRenderer::draw(Tex2D texture, glm::vec2 position, glm::vec2 size, float rotate, glm::vec3 color){
     this->shader.use();
     glm::mat4 model = glm::mat4(1.0f);
-    model = glm::translate(model, glm::vec3(position, 0.0f));  // first translate (transformations are: scale happens first, then rotation, and then final translation happens; reversed order)
+    model = glm::translate(model, glm::vec3(position, 0.0f));
 
-    model = glm::translate(model, glm::vec3(0.5f * size.x, 0.5f * size.y, 0.0f)); // move origin of rotation to center of quad
-    model = glm::rotate(model, glm::radians(rotate), glm::vec3(0.0f, 0.0f, 1.0f)); // then rotate
-    model = glm::translate(model, glm::vec3(-0.5f * size.x, -0.5f * size.y, 0.0f)); // move origin back
-
-    model = glm::scale(model, glm::vec3(size, 1.0f)); // last scale
+    model = glm::translate(model, glm::vec3(0.5f * size.x, 0.5f * size.y, 0.0f));
+    model = glm::rotate(model, glm::radians(rotate), glm::vec3(0.0f, 0.0f, 1.0f));
+    model = glm::translate(model, glm::vec3(-0.5f * size.x, -0.5f * size.y, 0.0f));
+    model = glm::scale(model, glm::vec3(size, 1.0f));
 
     this->shader.setMat4f("model", model);
-
-    // render textured quad
     this->shader.setVec3f("spriteColor", color);
 
     glActiveTexture(GL_TEXTURE0);
@@ -37,19 +30,17 @@ void SpriteRenderer::draw(Tex2D texture, glm::vec2 position, glm::vec2 size, flo
     glBindVertexArray(0);
 }
 
-void SpriteRenderer::initRenderData()
-{
-    // configure VAO/VBO
+void SpriteRenderer::initRenderData(){
     unsigned int VBO;
     float vertices[] = { 
-        // pos      // tex
-        0.0f, 1.0f, 0.0f, 1.0f,
-        1.0f, 0.0f, 1.0f, 0.0f,
-        0.0f, 0.0f, 0.0f, 0.0f, 
+        // pos          // tex
+        0.0f, 1.0f,     0.0f, 1.0f,
+        1.0f, 0.0f,     1.0f, 0.0f,
+        0.0f, 0.0f,     0.0f, 0.0f, 
 
-        0.0f, 1.0f, 0.0f, 1.0f,
-        1.0f, 1.0f, 1.0f, 1.0f,
-        1.0f, 0.0f, 1.0f, 0.0f
+        0.0f, 1.0f,     0.0f, 1.0f,
+        1.0f, 1.0f,     1.0f, 1.0f,
+        1.0f, 0.0f,     1.0f, 0.0f
     };
 
     glGenVertexArrays(1, &this->quadVAO);
