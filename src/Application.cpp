@@ -27,6 +27,8 @@ Application::~Application(){
 
 void Application::run(){
     while(m_isRunning){
+        Uint32 start = SDL_GetTicks();
+
         SDL_GetMouseState(&m_mouseX, &m_mouseY);
         m_eventCallback();
 
@@ -37,6 +39,10 @@ void Application::run(){
         
         m_renderCallback();
         SDL_RenderPresent(m_renderer);
-        SDL_Delay(100);
+
+        Uint32 elapsedTime = SDL_GetTicks() - start;
+        if(elapsedTime < (1/m_framerate))
+            SDL_Delay((1/m_framerate) - elapsedTime);
+        // SDL_Delay(100);
     }
 }
