@@ -2,6 +2,7 @@
 
 Application::Application(){
     m_window = new Window("Lucerna", 1080, 720);
+    m_window->init();
 }
 
 Application::Application(const char* name, unsigned int width, unsigned int height){
@@ -14,10 +15,8 @@ Application::~Application(){
 }
 
 void Application::run(){
-    if(m_window->init()){
-        while(!m_window->closed()){
-            m_window->clear();
-            m_window->update();
-        }
+    while(!m_window->closed()){
+        m_window->clear();
+        m_window->update();
     }
 }

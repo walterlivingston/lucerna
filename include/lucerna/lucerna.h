@@ -19,5 +19,6 @@
 // #include "buffer_layout.h"
 // #include "vertex_array.h"
 // #include "shader.h"
-// #include "texture.h"
 #include "application.h"
+#include "texture.h"
+#include "resource_manager.h"
