@@ -13,14 +13,9 @@
 #include "backends/imgui_impl_opengl3.h"
 
 #include "window.h"
-// #include "renderer.h"
-// #include "vertex_buffer.h"
-// #include "index_buffer.h"
-// #include "buffer_layout.h"
-// #include "vertex_array.h"
 #include "application.h"
 #include "texture.h"
 #include "shader.h"
 #include "resource_manager.h"
 #include "sprite_renderer.h"
-
+#include "mesh.h"
