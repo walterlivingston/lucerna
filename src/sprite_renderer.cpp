@@ -12,7 +12,7 @@ SpriteRenderer::~SpriteRenderer(){
 void SpriteRenderer::draw(Tex2D texture, glm::vec2 position, glm::vec2 size, float rotate, glm::vec3 color){
     this->shader.use();
     glm::mat4 model = glm::mat4(1.0f);
-    model = glm::translate(model, glm::vec3(position, 0.0f));
+    model = glm::translate(model, glm::vec3(position.x - (texture.width/2), position.y - (texture.height/2), 0.0f));
 
     model = glm::translate(model, glm::vec3(0.5f * size.x, 0.5f * size.y, 0.0f));
     model = glm::rotate(model, glm::radians(rotate), glm::vec3(0.0f, 0.0f, 1.0f));

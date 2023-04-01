@@ -4,14 +4,14 @@
 
 class Tex2D{
     private:
-        unsigned int m_width;
-        unsigned int m_height;
-
         unsigned int m_format = GL_RGB;
         unsigned int m_wrap = GL_REPEAT;
         unsigned int m_filter = GL_LINEAR;
     public:
         unsigned int ID;
+
+        unsigned int width;
+        unsigned int height;
 
         Tex2D();
         void Generate(unsigned int width, unsigned int height, unsigned char* data);

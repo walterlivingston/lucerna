@@ -32,6 +32,11 @@ bool Window::init(){
     glfwMakeContextCurrent(m_window);
     gladLoadGL();
 
+    ImGui::CreateContext();
+    ImGui_ImplGlfw_InitForOpenGL(m_window, true);
+    ImGui_ImplOpenGL3_Init("#version 150");
+    ImGui::StyleColorsDark();
+
     return true;
 }
 

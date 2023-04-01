@@ -12,6 +12,9 @@ Application::Application(const char* name, unsigned int width, unsigned int heig
 
 Application::~Application(){
     delete m_window;
+    ImGui_ImplOpenGL3_Shutdown();
+    ImGui_ImplGlfw_Shutdown();
+    ImGui::DestroyContext();
 }
 
 void Application::run(){
@@ -19,8 +22,13 @@ void Application::run(){
         // m_eventCallback();
 
         m_window->clear();
+        ImGui_ImplOpenGL3_NewFrame();
+        ImGui_ImplGlfw_NewFrame();
+        ImGui::NewFrame();
         m_renderCallback();
 
+        ImGui::Render();
+        ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
         m_window->update();
     }
 }
