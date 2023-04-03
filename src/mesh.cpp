@@ -1,8 +1,8 @@
 #include "lucerna/lucerna.h"
 
-Mesh::Mesh(std::vector<Vertex> vertices, std::vector<unsigned int> indices, std::string shader){
-    this->m_vertices = vertices;
-    this->m_indices = indices;
+Mesh::Mesh(Primitive* primitive, std::string shader){
+    this->m_vertices = primitive->getVertices();
+    this->m_indices = primitive->getIndices();
     this->m_shader = ResourceManager::getShader(shader);
     this->initRenderData();
 }

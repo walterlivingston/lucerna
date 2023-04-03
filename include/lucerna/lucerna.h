@@ -19,3 +19,4 @@
 #include "resource_manager.h"
 #include "sprite_renderer.h"
 #include "mesh.h"
+#include "primitive.h"

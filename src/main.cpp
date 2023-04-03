@@ -5,6 +5,8 @@ int height = 720;
 
 SpriteRenderer* renderer;
 Mesh* mesh;
+Quad* rect;
+Triangle* tri;
 
 void render(){
     mesh->draw(ResourceManager::getTexture("mario"), 
@@ -27,23 +29,10 @@ int main(){
     ResourceManager::getShader("default").use().setInteger("image", 0);
     ResourceManager::getShader("default").setMat4f("projection", projection);
 
-    std::vector<Vertex> vertices = { 
-        // pos                          // tex
-        {glm::vec3(0.0f, 1.0f, 0.0f),   glm::vec2(0.0f, 1.0f)},
-        {glm::vec3(1.0f, 0.0f, 0.0f),   glm::vec2(1.0f, 0.0f)},
-        {glm::vec3(0.0f, 0.0f, 0.0f),   glm::vec2(0.0f, 0.0f)}, 
-
-        {glm::vec3(0.0f, 1.0f, 0.0f),   glm::vec2(0.0f, 1.0f)},
-        {glm::vec3(1.0f, 1.0f, 0.0f),   glm::vec2(1.0f, 1.0f)},
-        {glm::vec3(1.0f, 0.0f, 0.0f),   glm::vec2(1.0f, 0.0f)}
-    };
-    std::vector<unsigned int> indices = {
-        0,1,2,
-        3,4,5
-    };
-
+    rect = new Quad();
+    tri = new Triangle();
     renderer = new SpriteRenderer(ResourceManager::getShader("sprite"));
-    mesh = new Mesh(vertices, indices);
+    mesh = new Mesh(rect);
 
     app.setRenderCallback(render);
     app.run();
