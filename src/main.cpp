@@ -32,7 +32,7 @@ int main(){
     rect = new Quad();
     tri = new Triangle();
     renderer = new SpriteRenderer(ResourceManager::getShader("sprite"));
-    mesh = new Mesh(rect);
+    mesh = new Mesh(tri);
 
     app.setRenderCallback(render);
     app.run();
