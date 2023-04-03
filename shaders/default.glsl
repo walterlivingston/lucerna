@@ -19,9 +19,11 @@ in vec2 texCoords;
 out vec4 fragColor;
 
 uniform sampler2D image;
-uniform vec3 spriteColor;
+uniform bool hasTexture = false;
 
 void main(){    
-    fragColor = vec4(spriteColor, 1.0) * texture(image, texCoords);
-    //fragColor = vec4(1.0f, 0.0f, 0.0f, 1.0f);
+    if(hasTexture)
+        fragColor = texture(image, texCoords);
+    else
+        fragColor = vec4(1.0f, 0.0f, 0.0f, 1.0f);
 } 
